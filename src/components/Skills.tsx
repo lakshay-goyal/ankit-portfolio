@@ -17,19 +17,25 @@ const skillCategories = [
 
 export const Skills = () => {
   return (
-    <section className="py-20 px-6 bg-portfolio-secondary" id="skills">
+    <section className="py-20 px-6 bg-gradient-to-b from-portfolio-soft to-white" id="skills">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-portfolio-primary to-portfolio-accent bg-clip-text text-transparent">
+          Skills
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {skillCategories.map((category) => (
-            <Card key={category.title}>
+          {skillCategories.map((category, idx) => (
+            <Card 
+              key={category.title}
+              className="overflow-hidden hover:shadow-lg transition-shadow duration-300 animate-scaleIn"
+              style={{ animationDelay: `${idx * 100}ms` }}
+            >
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
-                <div className="flex flex-wrap gap-2">
+                <h3 className="text-xl font-semibold mb-6 text-portfolio-primary">{category.title}</h3>
+                <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-white text-portfolio-primary rounded-full text-sm"
+                      className="px-4 py-2 bg-portfolio-soft text-portfolio-primary rounded-full text-sm hover:bg-portfolio-primary hover:text-white transition-colors duration-300 cursor-default"
                     >
                       {skill}
                     </span>

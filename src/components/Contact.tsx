@@ -24,20 +24,26 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-gradient-to-b from-white to-portfolio-soft">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-portfolio-primary">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-portfolio-primary to-portfolio-accent bg-clip-text text-transparent">
           Contact Me
         </h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {contactInfo.map((info, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardContent className="flex flex-col items-center p-6 text-center">
-                <info.icon className="w-8 h-8 mb-4 text-portfolio-accent" />
-                <h3 className="font-medium mb-2">{info.label}</h3>
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {contactInfo.map((info, idx) => (
+            <Card 
+              key={idx} 
+              className="group hover:shadow-lg transition-all duration-300 animate-scaleIn border-portfolio-soft"
+              style={{ animationDelay: `${idx * 100}ms` }}
+            >
+              <CardContent className="flex flex-col items-center p-8 text-center">
+                <div className="mb-6 p-4 bg-portfolio-soft rounded-full group-hover:bg-portfolio-primary transition-colors duration-300">
+                  <info.icon className="w-8 h-8 text-portfolio-primary group-hover:text-white transition-colors duration-300" />
+                </div>
+                <h3 className="font-medium mb-3 text-lg">{info.label}</h3>
                 <a
                   href={info.href}
-                  className="text-sm text-gray-600 hover:text-portfolio-primary"
+                  className="text-gray-600 hover:text-portfolio-primary transition-colors duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

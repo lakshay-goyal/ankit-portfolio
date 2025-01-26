@@ -25,9 +25,11 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         portfolio: {
-          primary: "#6E59A5",
-          secondary: "#E5DEFF",
-          accent: "#9b87f5",
+          primary: "#1EAEDB",
+          secondary: "#D3E4FD",
+          accent: "#0FA0CE",
+          soft: "#F1F0FB",
+          peach: "#FDE1D3",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -76,11 +78,16 @@ export default {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        scaleIn: {
+          "0%": { transform: "scale(0.95)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: "fadeIn 0.5s ease-out forwards",
+        scaleIn: "scaleIn 0.3s ease-out forwards",
       },
     },
   },
