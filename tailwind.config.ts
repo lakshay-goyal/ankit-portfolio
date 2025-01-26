@@ -25,9 +25,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         portfolio: {
-          primary: "#1EAEDB",
-          secondary: "#D3E4FD",
-          accent: "#0FA0CE",
+          primary: "#9b87f5",
+          secondary: "#7E69AB",
+          accent: "#D6BCFA",
           soft: "#F1F0FB",
           peach: "#FDE1D3",
         },
