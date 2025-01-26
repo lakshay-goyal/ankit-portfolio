@@ -18,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        fredoka: ['Fredoka', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -25,9 +28,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         portfolio: {
-          primary: "#9b87f5",
-          secondary: "#7E69AB",
-          accent: "#D6BCFA",
+          primary: "#8B5CF6",
+          secondary: "#D946EF",
+          accent: "#F97316",
           soft: "#F1F0FB",
           peach: "#FDE1D3",
         },
