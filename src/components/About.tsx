@@ -1,5 +1,8 @@
 import { FileText, Video } from "lucide-react";
 import { Button } from "./ui/button";
+import Image from '../assets/Ankit.jpeg'
+import Resume from '../assets/Resume.pdf'
+import VideoResume from '../assets/VideoResume.mp4'
 
 export const About = () => {
   return (
@@ -12,7 +15,7 @@ export const About = () => {
           <div className="space-y-6 animate-scaleIn">
             <div className="relative group">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                src={Image}
                 alt="Profile"
                 className="rounded-2xl shadow-lg w-full max-w-md mx-auto transition-transform duration-300 group-hover:scale-[1.02]"
               />
@@ -21,16 +24,14 @@ export const About = () => {
           </div>
           <div className="space-y-8 animate-fadeIn">
             <p className="text-gray-700 leading-relaxed text-lg">
-              I am a passionate developer with expertise in building modern web applications.
-              My journey in technology has been driven by curiosity and a desire to create
-              impactful solutions that make a difference.
+            I am a data-driven Product and Project Manager with expertise in Business and Data Analytics. With a strong analytical mindset and strategic vision, I leverage data insights to drive product innovation, optimize business processes, and enhance decision-making. Passionate about solving complex problems, I excel in cross-functional collaboration, agile methodologies, and delivering impactful solutions that align with business goals.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button 
                 className="flex items-center gap-2 bg-portfolio-primary hover:bg-portfolio-accent transition-colors duration-300"
               >
                 <FileText className="w-4 h-4" />
-                <a href="/path-to-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={Resume} target="_blank" rel="noopener noreferrer">
                   Download Resume
                 </a>
               </Button>
@@ -39,7 +40,7 @@ export const About = () => {
                 className="flex items-center gap-2 border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary hover:text-white transition-all duration-300"
               >
                 <Video className="w-4 h-4" />
-                <a href="https://youtube.com/your-video" target="_blank" rel="noopener noreferrer">
+                <a href={VideoResume} target="_blank" rel="noopener noreferrer">
                   Watch Video Resume
                 </a>
               </Button>

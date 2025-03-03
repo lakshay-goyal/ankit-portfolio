@@ -6,20 +6,20 @@ export const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "ankitkrthakur881@gmail.com",
+      href: "mailto:ankitkrthakur881@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 234 567 890",
-      href: "tel:+1234567890",
+      value: "+91 9508676051",
+      href: "tel:+919508676051",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "City, Country",
-      href: "https://maps.google.com",
+      value: "Gurgoan, India",
+      href: "https://maps.app.goo.gl/6ZL2ovFj2Azc4FNNA",
     },
   ];
 
