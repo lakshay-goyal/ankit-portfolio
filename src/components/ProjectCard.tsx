@@ -20,22 +20,22 @@ export const ProjectCard = ({
   imageUrl,
 }: ProjectCardProps) => {
   return (
-    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
-      <CardHeader className="p-0">
+    <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl bg-white/50 backdrop-blur-sm border-opacity-50">
+      <CardHeader className="p-0 overflow-hidden">
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-48 object-cover hover:opacity-90 transition-opacity"
+          className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </CardHeader>
       <CardContent className="p-6">
-        <CardTitle className="mb-4">{title}</CardTitle>
-        <p className="text-gray-600 mb-4">{description}</p>
+        <CardTitle className="mb-4 text-xl font-bold text-portfolio-primary">{title}</CardTitle>
+        <p className="text-gray-600 mb-6 line-clamp-3">{description}</p>
         <div className="flex flex-wrap gap-2">
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-portfolio-secondary text-portfolio-primary rounded-full text-sm"
+              className="px-3 py-1 bg-portfolio-secondary/10 text-portfolio-primary rounded-full text-sm font-medium transition-colors hover:bg-portfolio-secondary/20"
             >
               {tech}
             </span>
@@ -43,12 +43,22 @@ export const ProjectCard = ({
         </div>
       </CardContent>
       <CardFooter className="flex gap-4 p-6 pt-0">
-        <Button variant="outline" size="sm" asChild>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          asChild 
+          className="transition-colors hover:bg-portfolio-primary hover:text-white"
+        >
           <a href={demoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
             <ExternalLink className="h-4 w-4" /> Live Demo
           </a>
         </Button>
-        <Button variant="outline" size="sm" asChild>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          asChild
+          className="transition-colors hover:bg-portfolio-primary hover:text-white"
+        >
           <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
             <Github className="h-4 w-4" /> Code
           </a>

@@ -1,69 +1,118 @@
-# Welcome to your Lovable project
+# Personal Portfolio Website
 
-## Project info
+![Portfolio Preview](./src/assets/projects/1_Portfolio.png)
 
-**URL**: https://lovable.dev/projects/abc408c4-c5b3-417e-93ec-a17c0c24d066
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS, featuring a clean design and smooth animations.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **Responsive Design**: Seamlessly adapts to all screen sizes
+- **Dark/Light Mode**: Toggle between color themes
+- **Smooth Animations**: Engaging user experience with subtle animations
+- **Interactive Components**: Dynamic UI elements using shadcn/ui
+- **Modern Tech Stack**: Built with industry-standard technologies
 
-**Use Lovable**
+## 🚀 Sections
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/abc408c4-c5b3-417e-93ec-a17c0c24d066) and start prompting.
+- **Hero**: Eye-catching introduction with social links
+- **About**: Professional background and downloadable resume
+- **Skills**: Technical expertise categorized by domain
+- **Achievements**: Interactive display of certifications
+- **Tools**: Showcase of professional tools and technologies
+- **Contact**: Multiple ways to get in touch
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technologies Used
 
-**Use your preferred IDE**
+- **Frontend Framework**: React + TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Animations**: Custom CSS animations
+- **State Management**: React Hooks
+- **Build Tool**: Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```
+src/
+├── assets/          # Static assets (images, PDFs)
+├── components/      # React components
+│   ├── ui/         # Reusable UI components
+│   ├── About.tsx   # About section
+│   ├── Hero.tsx    # Hero section
+│   └── ...         # Other section components
+├── lib/            # Utility functions
+├── pages/          # Page components
+└── App.tsx         # Main application component
+```
 
-Follow these steps:
+## 🎨 Features & Components
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Core Components
+- **ThemeToggle**: Dynamic theme switching
+- **Navbar**: Responsive navigation menu
+- **Hero**: Animated introduction section
+- **About**: Professional background with downloadable assets
+- **Skills**: Interactive skill showcase
+- **Achievements**: Certificate gallery
+- **Contact**: Multiple contact options
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### UI Components
+- Custom buttons with hover effects
+- Responsive cards with animations
+- Interactive tooltips
+- Toast notifications
+- Modal dialogs
+- Form elements
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. **Clone the repository**
+```bash
+git clone https://github.com/lakshay-goyal/ankit-portfolio
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start development server**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. **Build for production**
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 Responsive Design
 
-**Use GitHub Codespaces**
+- Mobile-first approach
+- Breakpoints for all device sizes
+- Optimized layouts for different screens
+- Touch-friendly interactions
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Customization
 
-## What technologies are used for this project?
+### Theme Colors
+The project uses a custom color palette defined in Tailwind config:
+- Primary: Portfolio brand color
+- Accent: Secondary brand color
+- Background: Light/dark mode backgrounds
+- Text: Optimized for readability
 
-This project is built with .
+### Adding New Sections
+1. Create new component in `src/components`
+2. Add routing in `App.tsx`
+3. Update navigation in `Navbar.tsx`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📧 Contact
 
-## How can I deploy this project?
+For any questions or feedback, please reach out:
+- Email: [ankitkrthakur881@gmail.com](mailto:ankitkrthakur881@gmail.com)
+- LinkedIn: [Ankit Kumar](https://www.linkedin.com/in/ankit-kumar-293946319/)
+- GitHub: [Ankit-Kumar2005](https://github.com/Ankit-Kumar2005)
 
-Simply open [Lovable](https://lovable.dev/projects/abc408c4-c5b3-417e-93ec-a17c0c24d066) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
